@@ -1,0 +1,28 @@
+{
+  "name": "anomaly-packer-docs",
+  "version": "1.0.0",
+  "description": "Anomaly Packer Documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piscopancer/anomaly-packer.git"
+  },
+  "keywords": [
+    "stalker",
+    "anomaly"
+  ],
+  "author": "piscopancer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piscopancer/anomaly-packer/issues"
+  },
+  "homepage": "https://github.com/piscopancer/anomaly-packer#readme",
+  "devDependencies": {
+    "vitepress": "^1.3.1"
+  }
+}

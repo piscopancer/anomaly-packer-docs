@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+::selection {
+  background: #32363f;
+}
+:root {
+  scroll-behavior: smooth;
+
+  /* --vp-font-family-base:  */
+  --vp-font-family-mono: 'jetbrains mono', monospace;
+
+  --vp-c-brand-1: #f59e0b;
+  --vp-c-brand-2: #d97706;
+  --vp-c-brand-3: #f59e0b;
+
+  --vp-button-brand-text: black;
+  --vp-button-brand-hover-text: black;
+}
