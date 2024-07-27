@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Anomaly Packer',
   description: 'A development tool for building type-safe addons for S.T.A.L.K.E.R. Anomaly',
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     logo: {
       light: '/logo-light.svg',
