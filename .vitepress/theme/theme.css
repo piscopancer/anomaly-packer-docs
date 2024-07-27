@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+@font-face {
+  font-family: 'geist';
+  src: url('geist.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'geist mono';
+  src: url('geist-mono.ttf') format('truetype');
+}
+
 ::selection {
   background: #32363f;
 }
 :root {
   scroll-behavior: smooth;
 
-  /* --vp-font-family-base:  */
-  --vp-font-family-mono: 'jetbrains mono', monospace;
+  --vp-font-family-base: geist;
+  /* --vp-font-family-mono: 'jetbrains mono', monospace; */
+  --vp-font-family-mono: 'geist mono', monospace;
 
   --vp-c-brand-1: #f59e0b;
   --vp-c-brand-2: #d97706;
@@ -15,4 +26,8 @@
 
   --vp-button-brand-text: black;
   --vp-button-brand-hover-text: black;
+  --vp-button-brand-active-text: black;
+
+  --vp-custom-block-warning-text: #f59e0b;
+  --vp-custom-block-warning-bg: #f59e0b11;
 }

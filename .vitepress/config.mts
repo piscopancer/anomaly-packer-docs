@@ -1,11 +1,13 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Anomaly Packer',
   description: 'A development tool for building type-safe addons for S.T.A.L.K.E.R. Anomaly',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: {
+      light: '/logo-light.svg',
+      dark: '/logo-dark.svg',
+    },
     externalLinkIcon: true,
     search: {
       provider: 'local',
@@ -13,14 +15,33 @@ export default defineConfig({
         detailedView: true,
       },
     },
-    nav: [{ text: 'Docs', link: 'docs/' }],
+    nav: [{ text: 'Docs on GitHub', link: 'https://github.com/piscopancer/anomaly-packer-docs' }],
     sidebar: [
       {
+        items: [{ text: 'Intro', link: 'docs' }],
+      },
+      {
+        text: 'First steps',
         base: 'docs/',
         items: [
-          { text: 'Installation', link: 'installation' },
-          { text: 'Configuration', link: 'configuration' },
+          { text: 'Installation', link: 'install' },
+          { text: 'Configuration', link: 'config' },
         ],
+      },
+      {
+        base: 'docs/usage/',
+        text: 'Usage',
+        items: [
+          { text: 'Gamedata directory', link: 'gamedata' },
+          { text: 'Packing', link: 'packing' },
+          { text: 'Scripts', link: 'scripts' },
+          { text: 'Text generation', link: 'text' },
+        ],
+      },
+      {
+        base: '/docs/contribution/',
+        text: 'Contribution',
+        items: [{ text: 'Type Declarations', link: 'type-declarations' }],
       },
     ],
     socialLinks: [
@@ -31,6 +52,12 @@ export default defineConfig({
     ],
     footer: {
       message: "Do you want to hear a joke about pizza? Nevermind, it's too cheesy...",
+    },
+  },
+  markdown: {
+    theme: {
+      dark: 'nord',
+      light: 'github-light',
     },
   },
 })

@@ -12,7 +12,7 @@ TypeScript is a type-safe language and a linter for JavaScript. If you do not kn
 
 ## Terminal Commands
 
-Anomaly Packer provides some important terminal commands, like one for copying type declaration files into your project.
+Anomaly Packer provides some important terminal commands, like one for copying type declaration files into your project. More about terminal commands [here](usage/scripts.md#terminal-commands).
 
 ```sh
 bun run anomaly-packer add game src/types
@@ -22,8 +22,8 @@ bun run anomaly-packer add game src/types
 
 Anomaly Packer provides a `pack` function that handles transpilation of TypeScript files and creates a build directory with the name of your choosing.
 
-Read about packing in detail [here](./packing).
+Read about packing in detail [here](usage/packing.md).
 
 ## Utility functions
 
-Functions like `ltx`, `dialog` and `specificCharacter` make it easy and safe to create configs.
+Functions like `ltx` and `dialog` make it easy and safe to create configs. The majority of utulity functions provide a type-safe way to generate texts. You can read more about text generation [here](usage/text.md).
